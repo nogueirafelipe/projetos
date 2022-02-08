@@ -84,6 +84,7 @@ main h1 {
 
 h1 a {
     text-decoration: none;
+    color: var(--cor06);
 }
 
 h1 a:visited {
