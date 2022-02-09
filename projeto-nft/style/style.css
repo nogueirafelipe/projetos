@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 :root {
-    --cor01: hsl(215, 51%, 70%);
+    --cor01: hsl(215, 51%, 70%); /* Fonte */
     --cor02: hsl(178, 100%, 50%);
     --cor03: hsl(216, 54%, 11%); /* Fundo do body */
     --cor04: hsl(216, 50%, 16%); /* Fundo do main e footer */
-    --cor05: hsl(215, 32%, 27%); /* Fonte??? */
+    --cor05: hsl(215, 32%, 27%); 
     --cor06: hsl(0, 0%, 100%);
 }
 
@@ -45,10 +45,10 @@ main a:hover {
     color: var(--cor02);
 }
 
-#equi {
+.imagem {
     background-image: url('../images/image-equilibrium-302.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     margin: auto;
     margin-top: 30px;
     max-width: 302px;
@@ -57,26 +57,32 @@ main a:hover {
     border-radius: 15px;
 }
 
-.gambiarra {
-    margin: auto;
-    margin-top: 30px;
-    width: 302px;
-    height: 302px;
-    border-radius: 15px;
-}
-
-.gambiarra:hover {
-    opacity: 1;
-    visibility: visible;
+/* .imagem:hover {
     color: var(--cor02);
-}
+} */
 
-div#equi > a {
+/* div.imagem > div.sobrepor > a {
     text-decoration: none;
 }
 
-div#equi > a:hover {
+div.imagem > div.sobrepor > a:hover {
     color: var(--cor02);
+} */
+
+.sobrepor {
+    background-color: var(--cor02);
+    margin: auto;
+    margin-top: 30px;
+    max-width: 302px;
+    min-width: 202px;
+    height: 302px;
+    border-radius: 15px;
+    opacity: 0.5;
+    display: none;
+}
+
+.imagem:hover > .sobrepor {
+    display: block;
 }
 
 main h1 {
