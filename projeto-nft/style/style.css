@@ -25,7 +25,8 @@ body {
 main {
     padding-top: 1px;
     margin: auto;
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px; /* Mexi aqui */
     background-color: var(--cor04);
     border-radius: 15px;
     box-shadow: 0px 18px 5px 12px rgba(4, 10, 26, 0.144);
@@ -50,7 +51,8 @@ main a:hover {
     background-size: contain;
     margin: auto;
     margin-top: 30px;
-    width: 302px;
+    max-width: 302px;
+    min-width: 202px; /* Mexi aqui */
     height: 302px;
     border-radius: 15px;
 }
@@ -152,15 +154,15 @@ strong {
     color: var(--cor06);
 }
 
-#criador a {
+#criador > a > strong {
     text-decoration: none;
 }
 
-#criador a:visited {
+#criador > a > strong:visited {
     text-decoration: none;
     color: var(--cor06);
 }
 
-#criador a:hover {
+#criador > a > strong:hover {
     color: var(--cor02);
 }
