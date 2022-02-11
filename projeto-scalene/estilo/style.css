@@ -30,7 +30,7 @@ header {
     background-color: #D87519;
     background-image: url('../imagens/o.jpg');
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
     font-family: Neuro;
     text-align: center;
@@ -61,16 +61,17 @@ header a:hover {
 
 .video {
     background-image: linear-gradient(135deg, #D87519, #990207, #D50002);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
     margin: 0px 0px 0px -20px;
-    padding: 20px 0px 20px 20px;
-    padding-bottom: 56.5%;
+    padding: 20px 0px 20px 0px;
+    padding-bottom: 55.5%;
     position: relative;
 }
 
 .video > iframe {
     position: absolute;
     top: 5%;
-    left: 6.5%;
+    left: 6.3%;
     width: 90%;
     height: 90%;
 }
@@ -95,7 +96,7 @@ section {
     padding-left: 30px;
     line-height: 1em;
     font-family: var(--fonte03);
-    font-size: 7.5vw;
+    font-size: 8.5vw;
     font-weight: normal;
     text-transform: uppercase;
 }
