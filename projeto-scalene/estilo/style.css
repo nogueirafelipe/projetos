@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Neuro';
+    src: url('../fontes/Neuro\ X\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neuro light';
+    src: url('../fontes/Neuro\ X\ Regular\ Rounded.ttf') format('truetype');
+}
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: Neuro;
+    --fonte03: 'Neuro light';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: ;
+}
+
+header {
+    background-color: #D87519;
+    background-image: url('../imagens/o.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Neuro;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 20vw;
+    font-weight: normal;
+    padding-top: 13px;
+}
+
+header > p {
+    font-size: 5.5vw;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #990207;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 1em;
+    font-family: var(--fonte03);
+    font-size: 7.5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: #D87519;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    color: rgb(0, 0, 0);
+}
+
+.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(216, 117, 25, 0.479);
+    color: rgb(0, 0, 0);
+}
+
+section#img01 {
+    background-image: url('../imagens/d.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('../imagens/sombra][luz.jpg');
+    background-position: center bottom;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+section#img03 {
+    background-image: url('../imagens/i.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #D87519;
+    background-image: url('../imagens/o-cortada.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: var(--fonte01);
+    font-size: 1.5vw;
+    padding: 45px;
+    color: white;
+}
+
+footer > p {
+    background-color: rgba(0, 0, 0, 0.582);
+    display: inline-block;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #990207;
+}
