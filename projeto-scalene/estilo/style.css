@@ -6,14 +6,14 @@
 }
 
 @font-face {
-    font-family: 'Neuro light';
+    font-family: 'Neuro regular';
     src: url('../fontes/Neuro\ X\ Regular\ Rounded.ttf') format('truetype');
 }
 
 :root {
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte02: Neuro;
-    --fonte03: 'Neuro light';
+    --fonte03: 'Neuro regular';
 }
 
 * {
@@ -23,7 +23,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: ;
+    background-color: #D87519;
 }
 
 header {
@@ -55,8 +55,39 @@ header a {
 
 header a:hover {
     text-decoration: underline;
-    color: #990207;
+    text-shadow: 0px 0px 5px rgba(213, 0, 4, 0.603);
+    color: #D50002;
 }
+
+.video {
+    background-image: linear-gradient(135deg, #D87519, #990207, #D50002);
+    margin: 0px 0px 0px -20px;
+    padding: 20px 0px 20px 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 6.5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*section.video {
+    background-image: linear-gradient(135deg, #D87519, #990207, #D50002);
+    height: 315px;
+    position: relative;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+}
+
+section.video > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
 
 section {
     padding-top: 10vh;
@@ -67,6 +98,13 @@ section {
     font-size: 7.5vw;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+section > h1 {
+    text-align: center;
+    font-family: var(--fonte02);
+    font-weight: normal;
+    padding-bottom: 40px;
 }
 
 section.normal {
