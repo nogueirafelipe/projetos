@@ -62,8 +62,8 @@ header a:hover {
 .video {
     background-image: linear-gradient(135deg, #D87519, #990207, #D50002);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
-    margin: 0px -20px 0px -20px;
-    padding: 20px;
+    margin: 0px 0px 0px -20px;
+    padding: 20px 0px 20px 20px;
     padding-bottom: 55.5%;
     position: relative;
 }
@@ -96,9 +96,10 @@ section {
     padding-left: 30px;
     line-height: 1em;
     font-family: var(--fonte03);
-    font-size: 8.5vw;
+    font-size: 8vw;
     font-weight: normal;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 section > h1 {
@@ -134,8 +135,8 @@ section#img01 {
 }
 
 section#img02 {
-    background-image: url('../imagens/sombra][luz.jpg');
-    background-position: center bottom;
+    background-image: url('../imagens/s-deitada.jpg');
+    background-position: left center;
     background-size: 100%;
     background-attachment: fixed;
 }
