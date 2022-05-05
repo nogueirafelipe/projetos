@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --fonte01: 'Kumbh Sans', sans-serif;
+    --cor01: hsl(185, 75%, 39%);
+    --cor02: hsl(229, 23%, 23%);
+    --cor03: hsl(227, 10%, 46%);
+    --cor04: hsl(0, 0%, 59%);
+}
+
+body {
+    display: flex;
+    font-family: var(--fonte01);
+    background-color: var(--cor01);
+}
+
+.imgTop {
+    width: 500px;
+    height: 500px;
+    background-image: url("../imagens/bg-pattern-top.svg");
+    background-position: bottom right;
+}
+
+.imgBottom {
+    width: 500px;
+    height: 500px;
+    background-image: url("../imagens/bg-pattern-bottom.svg");
+    background-position: left top;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-bottom: -156px;
+}
+
+.container {
+    border-radius: 20px;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.144);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.cardBg {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main {
+    margin-top: -4px;
+    padding: 0;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.victor {
+    text-align: center;
+    margin-top: -60px;
+}
+
+.victor img {
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.nome {
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cor02);
+}
+
+span {
+    font-weight: 400;
+    color: var(--cor03);
+}
+
+.cidade {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: var(--cor03);
+    padding-bottom: 30px;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.numberStats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dados {
+    padding-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor02);
+}
+
+.categorias {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: var(--cor04);
+}
+
+#follow {
+    
+}
